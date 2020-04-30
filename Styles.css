@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+/* Master Styles */
+
+.website-container{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: slategray;
+    position: relative;
+    left: 5%;
+    top: 2.5vh;
+    overflow-x: hidden;
+}
+
+.website-container {
+    width: 90vw;
+    min-height: 1000px;
+    background-color: white;
+}
+
+/* Nav styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    font-size: larger;
+    border-bottom: 2px solid rgb(0, 27, 0);
+}
+
+.nav-left-side {
+    display: flex;
+}
+
+.nav-wrapper > .nav-left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(0, 27, 0);
+}
+
+.nav-brand{
+    text-transform: uppercase;
+    color: rgb(0, 27, 0);
+}
+
+/* Main Styles */
+
+.main-title {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    color: olive;
+}
+
+.main-article-picture img{
+    float: right;
+    position: relative;
+    right: 250px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .main-article-picture img{
+        margin-top: 100px;
+        padding: 10px;
+        width: 325px;
+        height: 250px;
+    }
+}
+
+.main-article-picture {
+    width: 100vw;
+}
+
+img {
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+
+.main-article-text {
+    font-size: 19px;
+    width: 41%;
+    padding-left: 15px;
+    float: left;
+}
+
+.main-footer {
+    position: fixed;
+    bottom: 30px;
+    left: 45vw;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+}
+
+.link {
+    text-decoration: underline;
+    color: olive;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+    
+.link:hover {
+    cursor: pointer;
+    color: rgb(209, 126, 1);
+}
+
+.link:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    color: rgb(209, 126, 1);
+}
+
+.main-subheading {
+    font-size: larger;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.List2 {
+    padding: 4px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.List2 li {
+    width: 80%;
+    height: 80%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.List2 li::before {
+    content: "\2022";
+    color: olive;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
